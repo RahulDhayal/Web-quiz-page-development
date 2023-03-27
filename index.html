@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body class="bg-slate-400">
+    <div class="grid h-screen place-items-center justify-center items-center ">
+        <div class="rounded-2xl px-24 py-14 bg-cyan-300 shadow-lg shadow-cyan-500/50 ...">
+            <h2 class="text-4xl font-normal m-4 my-10" id="question">Question</h2>
+            <ul>
+                <li class="text-2xl pl-4 my-4">
+                    <input class="cursor-pointer" type="radio" name="answer" id="ans1" className="answer">
+                    <label for="ans1" id="option1">Answer option</label>
+                </li>
+                <li class="text-2xl pl-4 my-4">
+                    <input class="cursor-pointer" type="radio" name="answer" id="ans2" className="answer">
+                    <label for="ans2" id="option2">Answer option</label>
+                </li>
+                <li class="text-2xl pl-4 my-4">
+                    <input class="cursor-pointer"  type="radio" name="answer" id="ans3" className="answer">
+                    <label for="ans3" id="option3">Answer option</label>
+                </li>
+                <li class="text-2xl pl-4 my-4">
+                    <input class="cursor-pointer" type="radio" name="answer" id="ans4" className="answer">
+                    <label for="ans4" id="option4">Answer option</label>
+                </li>
+                <button id="submit" class="px-10 py-3 block m-auto mt-10 rounded-sm text-base bg-gray-500 hover:bg-blue-400">Submit</button>
+                <!-- <div id="showScore" className="scoreArea" class=" hidden mt-5 px-7 py-10  bg-cyan-600 shadow-lg shadow-cyan-500/50 ..."></div> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
